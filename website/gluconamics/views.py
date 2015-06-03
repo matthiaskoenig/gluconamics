@@ -4,7 +4,7 @@ from django.template import RequestContext, loader
 
 
 def index(request):
-    template = loader.get_template('gluconamics/test.html')
+    template = loader.get_template('gluconamics/index.html')
     context = RequestContext(request, {})
     return HttpResponse(template.render(context))
 
